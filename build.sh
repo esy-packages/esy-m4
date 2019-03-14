@@ -16,6 +16,7 @@ cd src/
 echo Touching files..
 touch configure.ac aclocal.m4 Makefile.am Makefile.in
 echo Running configure
+chmod 755 ./configure ./build-aux/*
 if [ "$2" == "windows" ]
 then
     ./configure --prefix=$1 --host x86_64-w64-mingw32
