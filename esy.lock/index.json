@@ -1,0 +1,19 @@
+{
+  "checksum": "0cc961f41dbf4ff5ab5654751a4ba36e",
+  "root": "esy-autoconf@link-dev:./package.json",
+  "node": {
+    "esy-autoconf@link-dev:./package.json": {
+      "id": "esy-autoconf@link-dev:./package.json",
+      "name": "esy-autoconf",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    }
+  }
+}

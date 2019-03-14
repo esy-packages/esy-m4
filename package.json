@@ -1,0 +1,14 @@
+{
+  "name": "esy-autoconf",
+  "version": "6.1.2000",
+  "description": "Autoconf packaged for esy",
+  "esy": {
+    "buildsInSource": true,
+    "build": [
+      "bash ./build.sh #{self.install} #{os}"
+    ],
+    "install": [
+      "bash ./install.bash"
+    ]
+  }
+}
