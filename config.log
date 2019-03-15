@@ -1,0 +1,38 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+./configure: line 507: cc: command not found
+./configure: line 687: cc: command not found
+./configure: line 701: cc: command not found
+./configure: line 728: /lib/cpp: No such file or directory
+./configure: line 772: /lib/cpp: No such file or directory
+./configure: line 836: cc: command not found
+./configure: line 836: cc: command not found
+./configure: line 836: cc: command not found
+./configure: line 836: cc: command not found
+./configure: line 836: cc: command not found
+./configure: line 922: cc: command not found
+./configure: line 953: /lib/cpp: No such file or directory
+./configure: line 953: /lib/cpp: No such file or directory
+./configure: line 953: /lib/cpp: No such file or directory
+./configure: line 953: /lib/cpp: No such file or directory
+./configure: line 953: /lib/cpp: No such file or directory
+./configure: line 990: cc: command not found
+./configure: line 1014: /lib/cpp: No such file or directory
+./configure: line 1115: cc: command not found
+./configure: line 1143: /lib/cpp: No such file or directory
+./configure: line 1190: cc: command not found
+./configure: line 1190: cc: command not found
+./configure: line 1190: cc: command not found
+./configure: line 1190: cc: command not found
+./configure: line 1190: cc: command not found
+./configure: line 1190: cc: command not found
+./configure: line 1190: cc: command not found
+./configure: line 1227: cc: command not found
+./configure: line 1274: cc: command not found
+./configure: line 1317: /lib/cpp: No such file or directory
+./configure: line 1535: cc: command not found
+./configure: line 1581: cc: command not found
+./configure: line 1630: cc: command not found
+./configure: line 1656: /lib/cpp: No such file or directory
+./configure: line 1692: cc: command not found
