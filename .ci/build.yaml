@@ -17,6 +17,5 @@ jobs:
     displayName: 'Installing deps'
   - script: esy build
     displayName: 'Building'
-  - script: esy x autoconf
+  - script: esy x which m4
     displayName: 'Dry run'
-   

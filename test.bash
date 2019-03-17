@@ -1,8 +1,5 @@
 #! /bin/bash
 
-pwd
-mkdir _test
-cd _test
 
 INCLUDE=$cur__install/include
 
@@ -11,9 +8,7 @@ ls -a $INCLUDE
 echo "lib.."
 ls -a $cur__lib
 
-gcc ./../test.c -o ./test.exe -I$INCLUDE -L$cur__lib -lssl -lcrypto
-
-export PATH=$PATH:$cur__bin:$cur__lib
+export PATH=$cur__bin:$cur__lib:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$cur__lib
 
 echo "Augmented path: $PATH"
@@ -24,4 +19,4 @@ cp $cur__bin/*.dll .
 echo "Test executable path:"
 ls -a .
 
-./test.exe
+which m4

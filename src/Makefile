@@ -1,3 +1,4 @@
+# Generated automatically from Makefile.in by configure.
 # Makefile for GNU m4 sources.
 # Copyright (C) 1994 Free Software Foundation, Inc.
 
@@ -15,26 +16,25 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-PRODUCT = @PRODUCT@
-VERSION = @VERSION@
+PRODUCT = m4
+VERSION = 1.4
 
 SHELL = /bin/sh
-srcdir = @srcdir@
-VPATH = @srcdir@
+srcdir = .
 
-CC = @CC@
-CFLAGS = @CFLAGS@
-CPPFLAGS = @CPPFLAGS@
-DEFS = @DEFS@
-INSTALL = @INSTALL@
-INSTALL_PROGRAM = @INSTALL_PROGRAM@
-LDFLAGS = @LDFLAGS@
-LIBS = @LIBS@
-STACKOVF = @STACKOVF@
+CC = cc
+CFLAGS = -g
+CPPFLAGS = 
+DEFS = -DHAVE_CONFIG_H
+INSTALL = /usr/bin/install -c
+INSTALL_PROGRAM = ${INSTALL}
+LDFLAGS = 
+LIBS = 
+STACKOVF = 
 
-prefix = @prefix@
-exec_prefix = @exec_prefix@
-transform = @program_transform_name@
+prefix = /usr/local
+exec_prefix = ${prefix}
+transform = s,x,x,
 bindir = $(exec_prefix)/bin
 
 COMPILE = $(CC) -c $(DEFS) $(INCLUDES) $(CPPFLAGS) $(CFLAGS)
@@ -45,8 +45,8 @@ LINK = $(CC) $(LDFLAGS) -o $@
 .c.o:
 	$(COMPILE) $<
 
-ANSI2KNR = @ANSI2KNR@
-O = .@U@o
+ANSI2KNR = ansi2knr
+O = ._o
 
 .SUFFIXES: ._c ._o
 .c._c:
