@@ -6,6 +6,7 @@
     "buildsInSource": true,
     "build": [
       ["rm", "-rf", "./config.cache"],
+      "find ./ -exec touch -t 200905010101 {} +",
       ["chmod", "755", "./configure", "checks/get-them", "./test.bash", "mkinstalldirs"],
       ["ln", "-s", "/usr/bin/true", "#{ self.bin / 'makeinfo' }"],
       ["bash", "-c", "#{os == 'windows' ? 'cp /usr/x86_64-w64-mingw32/sys-root/mingw/include/signal.h /usr/x86_64-w64-mingw32/sys-root/mingw/include/sys': 'true' }"],
@@ -14,7 +15,5 @@
       ["make", "install"],
       ["./test.bash"]
     ]
-  },
-  "dependencies": {"esy-autoconf": "*"},
-  "resolutions": {"esy-autoconf": "esy-packages/esy-autoconf#6cfd53294661931269efc366a85ef86be5c0ecf3"}
+  }
 }
