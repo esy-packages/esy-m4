@@ -1,5 +1,5 @@
 {
-  "checksum": "b27bb2cb7fa27c237b53a9bd3f4a4f4f",
+  "checksum": "0cc961f41dbf4ff5ab5654751a4ba36e",
   "root": "esy-m4@link-dev:./package.json",
   "node": {
     "esy-m4@link-dev:./package.json": {
@@ -10,24 +10,6 @@
         "type": "link-dev",
         "path": ".",
         "manifest": "package.json"
-      },
-      "overrides": [],
-      "dependencies": [
-        "esy-autoconf@github:esy-packages/esy-autoconf#0c3e47a7f29420d4329ad533aa73c22c0617f05a@d41d8cd9"
-      ],
-      "devDependencies": []
-    },
-    "esy-autoconf@github:esy-packages/esy-autoconf#0c3e47a7f29420d4329ad533aa73c22c0617f05a@d41d8cd9": {
-      "id":
-        "esy-autoconf@github:esy-packages/esy-autoconf#0c3e47a7f29420d4329ad533aa73c22c0617f05a@d41d8cd9",
-      "name": "esy-autoconf",
-      "version":
-        "github:esy-packages/esy-autoconf#0c3e47a7f29420d4329ad533aa73c22c0617f05a",
-      "source": {
-        "type": "install",
-        "source": [
-          "github:esy-packages/esy-autoconf#0c3e47a7f29420d4329ad533aa73c22c0617f05a"
-        ]
       },
       "overrides": [],
       "dependencies": [],

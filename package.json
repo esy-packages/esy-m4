@@ -12,8 +12,7 @@
       ["bash", "-c", "#{os == 'windows' ? 'cp /usr/x86_64-w64-mingw32/sys-root/mingw/include/signal.h /usr/x86_64-w64-mingw32/sys-root/mingw/include/sys': 'true' }"],
       ["bash", "-c", "#{os == 'windows' ? 'CC=x86_64-w64-mingw32-gcc ./configure --prefix=$cur__install --build=x86_64-unknown-cygwin --target=x86_64-w64-mingw32' : './configure --prefix=$cur__install'}"],
       ["make"],
-      ["make", "install"],
-      ["./test.bash"]
+      ["make", "install"]
     ]
   }
 }
