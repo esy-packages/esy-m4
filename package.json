@@ -9,6 +9,7 @@
       "find ./ -exec touch -t 200905010101 {} +",
       ["chmod", "755", "./configure", "checks/get-them", "./test.bash", "mkinstalldirs"],
       ["ln", "-s", "/usr/bin/true", "#{ self.bin / 'makeinfo' }"],
+      ["sh", "-c", "#{os == 'linux' ? 'patch -p1 < m4-1.4.18-glibc-change-work-around.patch': 'true' }"],
       ["sh", "-c", "#{os == 'windows' ? 'cp /usr/x86_64-w64-mingw32/sys-root/mingw/include/signal.h /usr/x86_64-w64-mingw32/sys-root/mingw/include/sys': 'true' }"],
       ["sh", "-c", "#{os == 'windows' ? 'CC=x86_64-w64-mingw32-gcc ./configure --prefix=$cur__install --build=x86_64-unknown-cygwin --target=x86_64-w64-mingw32' : './configure --prefix=$cur__install'}"],
       ["make", "-j4"]
