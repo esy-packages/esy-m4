@@ -1,0 +1,11 @@
+{
+  "esy": {
+    "build": "#{esy-m4.bin}/m4 --version"
+  },
+  "dependencies": {
+    "esy-m4": "*"
+  },
+  "resolutions": {
+    "esy-m4": "link:./package.json"
+  }
+}
